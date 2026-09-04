@@ -1,2 +1,58 @@
-1. Statistical Framework & Data FoundationsDataset Scope: Processed a comprehensive dataset containing approximately 13,670 rows of global energy consumption metrics spanning 1965–2021.4 Market Tiers Segmentation: To eliminate skewness caused by massive energy-consuming nations, we used the Interquartile Range ($IQR$) and $Z\text{-Score}$ to divide markets into four distinct tiers:Low Demand TierCore Target Market (Focused on the Median for safe investment baselines)High Growth TierOutliers / Premium TierCalculated Statistical Metrics: Computed and transposed key statistical indicators:First Quartile ($Q1$): 2,815.51Third Quartile ($Q3$): 35,183.46Interquartile Range ($IQR$): 32,367.95Upper Outlier Boundary: 83,735.39Global Mean: 25,053.94Standard Deviation ($Std\ Dev$): 37,778.972. Branding & Visual ArchitectureMain Dashboard Header:Global Energy Consumption & Investment Horizons: Executive DashboardComparison Chart Title (Avg vs. Median):Market Skewness Analysis: Mean vs. Median Energy ConsumptionKPI Summary Cards: Designed three top-level executive cards:Total Markets Analyzed: 180+ CountriesCore Safe Investment Horizon (IQR): 5,658Premium / High-Demand Markets: 70 Countries3. Technical Solutions & Formula OptimizationFixed MEDIAN has no valid input data Error:Replaced legacy ARRAYFORMULA structures—which failed on blank or non-numeric cells—with dynamic FILTER logic wrapped in IFERROR for complete stability:Excel=IFERROR(MEDIAN(FILTER($D2:$D, $D2:$D >= $G$6, ISNUMBER($D2:$D))), 0)
-Unified Slicer & Chart Interactivity:Resolved non-responsive charts by matching the exact Data Range of the Slicer and all dashboard charts directly to the primary dataset ('primary energy use data'!A1:Z13670)."# Global-Energy-Consumption-Investment-Horizons" 
+# 📊 Global Energy Consumption & Investment Horizons (1965–2021)
+> **Executive Dashboard & Market Segmentation Analysis**
+
+---
+
+## 📌 Executive Summary
+This project provides a professional, executive-grade business intelligence dashboard designed for **C-level leadership** to evaluate global energy trends. Transforming over **13,670+ raw data points** into actionable investment insights, the analysis employs advanced statistical frameworks to group international markets into strategic tiers and mitigate data skewness.
+
+---
+
+## 📸 Dashboard Preview
+![Executive Dashboard](screenshots/dashboard_preview.png)
+
+---
+
+## 🎯 Key Features & Business Logic
+
+* 🎛️ **Dynamic Interactivity:** Integrated unified global Slicers across all KPI cards and visualization charts for real-time filtering by **Year** and **Country**.
+* ⚖️ **Skewness Mitigation:** Leveraged **Median** statistics over traditional Mean metrics to establish a reliable investment baseline, eliminating distortions from top-tier energy consumers.
+* 📈 **4-Tier Market Segmentation:** Applied Interquartile Range ($IQR$) and $Z\text{-Score}$ methodologies to divide global energy markets into distinct operational scopes.
+* 🛡️ **Fault-Tolerant Analytics:** Optimized complex Google Sheets formulas using `FILTER` and `IFERROR` logic to handle empty cells and non-numeric entries dynamically.
+
+---
+
+## 📐 Statistical Framework & Market Tiers
+
+| Market Tier | Statistical Criteria | Business Focus & Strategic Horizon |
+| :--- | :--- | :--- |
+| 🟢 **Low Demand Tier** | Below $Q1$ ($< 2,815.51$) | Emerging & low-volume consumption markets |
+| 🔵 **Core Target Market** | Within $IQR$ ($2,815.51 - 35,183.46$) | Primary safe-investment baseline (Median focus) |
+| 🟡 **High Growth Tier** | Upper $IQR$ to Outlier Boundary | Rapidly expanding demand markets |
+| 🔴 **Outliers / Premium Tier** | $> Upper Boundary$ ($> 83,735.39$) | High-demand mega markets (Top consumers) |
+
+---
+
+## 📊 Key Calculated Metrics
+
+```text
+  ├── 📉 First Quartile (Q1)     : 2,815.51
+  ├── 📈 Third Quartile (Q3)    : 35,183.46
+  ├── 📊 Interquartile Range     : 32,367.95 (IQR)
+  ├── 🚨 Upper Outlier Limit     : 83,735.39
+  ├── 🌐 Global Mean             : 25,053.94
+  └── 📏 Standard Deviation      : 37,778.97 (Std Dev)
+
+🛠️ Tools & Technologies Used
+🟩 Platform: Google Sheets / Microsoft Excel
+
+🧮 Advanced Formulas: MEDIAN, FILTER, ISNUMBER, IFERROR, AVERAGEIFS, Z-Score
+
+🎨 Visualizations: Bar/Column Charts, Diverging Scale Indicators, Dynamic Slicers, Custom Executive Styling
+
+📂 Version Control & Portfolio: Git & GitHub
+
+
+
+
+
