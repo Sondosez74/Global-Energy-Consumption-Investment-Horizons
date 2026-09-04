@@ -9,10 +9,9 @@ This project provides a professional, executive-grade business intelligence dash
 ---
 
 ## 📸 Dashboard Preview
-![Executive Dashboard](screenshots/dashboard_preview.png)
+![Executive Dashboard](screenshots/Capture.png)
 
 ---
-
 ## 🎯 Key Features & Business Logic
 
 * 🎛️ **Dynamic Interactivity:** Integrated unified global Slicers across all KPI cards and visualization charts for real-time filtering by **Year** and **Country**.
