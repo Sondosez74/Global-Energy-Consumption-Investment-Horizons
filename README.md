@@ -9,7 +9,7 @@ This project provides a professional, executive-grade business intelligence dash
 ---
 
 ## 📸 Dashboard Preview
-![Executive Dashboard](screenshots/Capture.png)
+![Executive Dashboard](screenshots/Capture.PNG)  
 
 ---
 ## 🎯 Key Features & Business Logic
