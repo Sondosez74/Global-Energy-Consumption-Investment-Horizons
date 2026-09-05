@@ -9,8 +9,8 @@ This project provides a professional, executive-grade business intelligence dash
 ---
 
 ## 📸 Dashboard Preview
-![Executive Dashboard](screenshots/Capture.PNG)  
-
+![Executive Dashboard](C:\Users\HP\Desktop\New folder (7)/Capture.PNG)  
+Capture.PNG
 ---
 ## 🎯 Key Features & Business Logic
 
